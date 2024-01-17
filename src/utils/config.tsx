@@ -9,15 +9,15 @@ import { ReactComponent as CodeWars } from '../assets/img/icons/codewars.svg';
 export const menuItems: MenuItem[] = [
   {
     name: 'About',
-    url: '/#about',
+    url: '#about',
   },
   {
     name: 'Works',
-    url: '/#works',
+    url: '#works',
   },
   {
     name: 'Contacts',
-    url: '/#contacts',
+    url: '#contacts',
   },
 ];
 
