@@ -149,6 +149,10 @@
       content: '';
       opacity: 0.6;
       transition: $transition-duration;
+
+      @include onTablet {
+        background-color: $navy;
+      }
     }
 
     &-image {
