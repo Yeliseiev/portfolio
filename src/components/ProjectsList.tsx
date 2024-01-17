@@ -53,13 +53,15 @@ export const ProjectsList = () => {
               ))}
             </ul>
           )}
-          <button
-            type="button"
-            className="button projects__button"
-            onClick={() => setShowMore(!showMore)}
-          >
-            {showMore ? 'Show less' : 'Show more'}
-          </button>
+          {!hasError && (
+            <button
+              type="button"
+              className="button projects__button"
+              onClick={() => setShowMore(!showMore)}
+            >
+              {showMore ? 'Show less' : 'Show more'}
+            </button>
+          )}
         </div>
       </div>
     </section>

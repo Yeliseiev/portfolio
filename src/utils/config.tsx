@@ -29,6 +29,11 @@ export const socialItems: SocialItem[] = [
   },
   {
     fill: 'stroke',
+    url: 'https://www.codewars.com/users/Smith271',
+    image: <CodeWars />,
+  },
+  {
+    fill: 'stroke',
     url: 'https://www.linkedin.com/in/kim-yeliseiev-398178253/',
     image: <LinkedIn />,
   },
@@ -36,10 +41,5 @@ export const socialItems: SocialItem[] = [
     fill: 'fill',
     url: 'https://www.facebook.com/rbv271',
     image: <Facebook />,
-  },
-  {
-    fill: 'stroke',
-    url: 'https://www.codewars.com/users/Smith271',
-    image: <CodeWars />,
   },
 ];

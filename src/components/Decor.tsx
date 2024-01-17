@@ -18,7 +18,7 @@ export const Decor: React.FC<Props> = ({ position }) => (
   >
     {position === DecorType.LEFT && (
       <ul className="decor__items">
-        {socialItems.map(({ fill, url, image }) => (
+        {socialItems.slice(0, 3).map(({ fill, url, image }) => (
           <li key={url}>
             <a
               href={url}
@@ -36,7 +36,7 @@ export const Decor: React.FC<Props> = ({ position }) => (
     {position === DecorType.RIGHT && (
       <span className="decor__items">
         <a href="mailto:yeliseiev.kim@gmail.com" className="decor__link">
-          yeliseiev.kim@gmail.com
+          kim@gmail.com
         </a>
       </span>
     )}
