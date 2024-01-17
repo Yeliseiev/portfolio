@@ -4,7 +4,7 @@ export function wait(delay: number) {
   });
 }
 
-const URL = 'api/projects.json';
+const URL = 'public/api/projects.json';
 
 export const fetchProjects = async () => {
   const response = await fetch(URL);
