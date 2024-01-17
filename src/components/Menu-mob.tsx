@@ -54,7 +54,11 @@ export const MenuMob = () => {
               </li>
             ))}
           </ol>
-          <a href="/" className="button" onClick={() => setIsChecked(false)}>
+          <a
+            href="cv/Kim_Yelisieiev_CV.pdf"
+            className="button"
+            onClick={() => setIsChecked(false)}
+          >
             Resume
           </a>
         </div>
