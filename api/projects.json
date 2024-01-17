@@ -13,7 +13,7 @@
       "Grid",
       "Flex"
     ],
-    "img": "my-bike.jpg",
+    "img": "img/my-bike.jpg",
     "projectURL": "https://github.com/Yeliseiev/MyBike",
     "webURL": "https://yeliseiev.github.io/MyBike/#",
     "layoutURL": "https://www.figma.com/file/Ic3SlZjkATYaS7uTifZAIk/BIKE"
@@ -32,7 +32,7 @@
       "Flex",
       "BEM"
     ],
-    "img": "the-met.jpg",
+    "img": "img/the-met.jpg",
     "projectURL": "https://github.com/Yeliseiev/the-met",
     "webURL": "https://yeliseiev.github.io/the-met/",
     "layoutURL": "https://www.figma.com/file/lSR1m42L9YwzQwzzxKwHpw/THE-MET"
@@ -52,7 +52,7 @@
       "BEM",
       "Swipper"
     ],
-    "img": "kickstarter.jpg",
+    "img": "img/kickstarter.jpg",
     "projectURL": "https://github.com/Yeliseiev/Kickstarter_layout",
     "webURL": "https://yeliseiev.github.io/Kickstarter_layout/",
     "layoutURL": "https://www.figma.com/file/Ujp7bCFuvuJlkn8TSbQPSZ/Kickstarter_FE-students"
@@ -72,7 +72,7 @@
       "Flex",
       "Swipper"
     ],
-    "img": "potr-pots.jpg",
+    "img": "img/potr-pots.jpg",
     "projectURL": "https://github.com/Yeliseiev/Potr_Pots_project",
     "webURL": "https://yeliseiev.github.io/Potr_Pots_project/",
     "layoutURL": "https://www.figma.com/file/50zgLU65Mcd3MisFHMfLfx/POTR-POTS_FE-students"
@@ -91,7 +91,7 @@
       "ESLint",
       "REST API requests"
     ],
-    "img": "todos.jpg",
+    "img": "img/todos.jpg",
     "projectURL": "https://github.com/Yeliseiev/react-todo-app-with-api",
     "webURL": "https://yeliseiev.github.io/react-todo-app-with-api/",
     "layoutURL": ""
@@ -110,7 +110,7 @@
       "API",
       "Local Storage"
     ],
-    "img": "phone-catalog.png",
+    "img": "img/phone-catalog.png",
     "projectURL": "https://github.com/Yeliseiev/phone_catalog_react_redux",
     "webURL": "https://yeliseiev.github.io/phone_catalog_react_redux/",
     "layoutURL": "https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign"
