@@ -1,0 +1,75 @@
+.fadeup-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity $transition-duration,
+    transform $transition-duration;
+}
+
+.fadeup-enter-done {
+  opacity: 1;
+  transform: translateY(0px);
+  transition:
+    opacity $transition-duration,
+    transform $transition-duration;
+}
+
+/* Fade down */
+.fadedown-enter {
+  opacity: 0.01;
+  transform: translateY(-20px);
+  transition:
+    opacity $transition-duration,
+    transform $transition-duration;
+}
+.fadedown-enter-done {
+  opacity: 1;
+  transform: translateY(0px);
+  transition:
+    opacity $transition-duration,
+    transform $transition-duration;
+}
+.fadedown-appear-active {
+  opacity: 0.01;
+  transform: translateY(-20px);
+  transition:
+    opacity $transition-duration,
+    transform $transition-duration;
+}
+.fadedown-appear-done {
+  opacity: 1;
+  transform: translateY(0px);
+  transition:
+    opacity $transition-duration,
+    transform $transition-duration;
+}
+.fadedown-exit {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity $transition-duration,
+    transform $transition-duration;
+}
+.fadedown-exit-active {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition:
+    opacity $transition-duration,
+    transform $transition-duration;
+}
+
+/* Fade */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-done {
+  opacity: 1;
+  transition: opacity $transition-duration;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity $transition-duration;
+}

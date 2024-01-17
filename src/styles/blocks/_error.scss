@@ -1,0 +1,8 @@
+.error {
+  display: flex;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  color: $blue;
+  @extend %h1;
+}

@@ -1,0 +1,34 @@
+.contacts {
+  max-width: 600px;
+  text-align: center;
+
+  &__title {
+    @extend %section-num;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: $green;
+    font-size: 14px;
+
+    &::before {
+      bottom: 0;
+      font-size: 14px;
+    }
+    &::after {
+      display: none;
+    }
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+    color: $lightest-slate;
+    font-size: clamp(30px, 4vw, 50px);
+    font-weight: bold;
+  }
+
+  &__text {
+    margin-bottom: 50px;
+    color: $lightest-slate;
+  }
+}

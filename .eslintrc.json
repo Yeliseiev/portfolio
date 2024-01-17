@@ -83,6 +83,9 @@
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "react/jsx-closing-bracket-location": [2, "line-aligned"],
-    "@typescript-eslint/object-curly-spacing": ["error", "always"]
+    "@typescript-eslint/object-curly-spacing": ["error", "always"],
+    "react/require-default-props": "off",
+    "operator-linebreak": "off",
+    "react/jsx-one-expression-per-line": "off"
   }
 }

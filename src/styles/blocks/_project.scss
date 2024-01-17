@@ -1,0 +1,222 @@
+.project {
+  position: relative;
+  display: grid;
+  align-items: center;
+  margin-bottom: 70px;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  transition: $transition-duration;
+
+  &__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px 40px 30px;
+    background-color: $light-navy;
+    color: $lightest-slate;
+    grid-column: 1 / -1;
+    text-align: left;
+
+    &-overline {
+      margin: 10px 0;
+      color: $green;
+      @extend %li;
+    }
+
+    &-title {
+      position: relative;
+      z-index: 2;
+      margin-bottom: 10px;
+
+      & a {
+        @extend %h3;
+        color: $white;
+        font-weight: 600;
+        @include hover(color, $green);
+      }
+    }
+
+    &-description {
+      position: relative;
+      z-index: 1;
+      padding: 20px 0;
+      border-radius: $border-radius;
+      background-color: transparent;
+      transition: $transition-duration;
+    }
+
+    &-tags {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px 0;
+
+      & li {
+        margin: 0 10px 5px 0;
+        white-space: nowrap;
+      }
+    }
+
+    &-links {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+    }
+
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+
+      &-figma {
+        & path {
+          fill: $light-slate;
+          transition: $transition-duration;
+        }
+      }
+
+      & svg {
+        width: 20px;
+        height: 20px;
+        stroke: $light-slate;
+        transition: $transition-duration;
+      }
+
+      &:hover {
+        & svg {
+          stroke: $green;
+        }
+
+        &.project__content-link-figma {
+          & path {
+            fill: $green;
+          }
+        }
+      }
+    }
+
+    @include onTablet {
+      z-index: 2;
+      padding: 0;
+      background-color: transparent;
+      grid-column: 1 / 9;
+
+      &-title {
+        margin-bottom: 20px;
+      }
+
+      &-description {
+        padding: 25px;
+        background-color: $light-navy;
+        box-shadow: $box-shadow-block;
+
+        &:hover {
+          box-shadow: 0 20px 30px -15px $navy-shadow;
+        }
+      }
+
+      &-tags {
+        margin: 20px 0;
+      }
+    }
+
+    @include onDesktop {
+      grid-column: 1 / 8;
+    }
+  }
+
+  &__picture {
+    position: absolute;
+    height: 100%;
+    box-shadow: $box-shadow-block;
+    grid-column: 1 / -1;
+    opacity: 0.1;
+
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: $border-radius;
+
+      background-color: $navy;
+      content: '';
+      opacity: 0.6;
+      transition: $transition-duration;
+    }
+
+    &-image {
+      @extend %img-set;
+    }
+
+    @include onTablet {
+      z-index: 1;
+      grid-column: 6 / -1;
+      opacity: 1;
+
+      &:hover {
+        & .project__picture-image {
+          filter: none;
+        }
+
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+
+    @include onDesktop {
+      grid-column: 7 / -1;
+    }
+  }
+
+  &:nth-child(2n + 1) {
+    @include onTablet {
+      & .project__content {
+        align-items: flex-end;
+        grid-column: 5 / -1;
+        text-align: right;
+
+        &-tags {
+          justify-content: flex-end;
+        }
+
+        &-links {
+          justify-content: flex-end;
+        }
+      }
+
+      & .project__picture {
+        grid-column: 1 / 8;
+      }
+    }
+
+    @include onDesktop {
+      & .project__content {
+        grid-column: 6 / -1;
+      }
+
+      & .project__picture {
+        grid-column: 1 / 7;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 0 20px 30px -15px $navy-shadow;
+  }
+
+  @include onTablet {
+    margin-bottom: 100px;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}

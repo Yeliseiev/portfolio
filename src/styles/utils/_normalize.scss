@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: $dark-slate $navy;
+  scrollbar-width: thin;
+}
+
+body {
+  background-color: $navy;
+  overflow-x: hidden;
+
+  &.hide-scroll {
+    overflow-y: hidden;
+
+    & .main {
+      filter: blur(5px);
+      pointer-events: none;
+    }
+  }
+}
+

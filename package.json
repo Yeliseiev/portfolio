@@ -1,8 +1,7 @@
 {
-  "name": "react-ts-template",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Yeliseiev/react-ts-template",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -11,9 +10,13 @@
     "@types/node": "^16.18.68",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18",
+    "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-intersection-observer": "^9.5.3",
+    "react-router-dom": "^6.21.0",
     "react-scripts": "5.0.1",
+    "react-transition-group": "^4.4.5",
     "sass": "^1.69.5",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
@@ -23,11 +26,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint -c .eslintrc.json --ext .js,.ts,.jsx,.tsx .",
-    "lint:fix": "npm run lint -- --fix",
     "prepare": "husky install",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "stylelint": "stylelint \"src/**/*.scss\"",
+    "stylelint:fix": "stylelint \"src/**/*.scss\" --fix",
+    "lint": "eslint -c .eslintrc.json --ext .js,.ts,.jsx,.tsx .",
+    "lintstyle": "npm run lint && npm run stylelint",
+    "lint:fix": "npm run lint -- --fix && npm run stylelint:fix"
   },
   "browserslist": {
     "production": [
@@ -42,11 +48,17 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@types/react-transition-group": "^4.4.10",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "eslint-config-prettier": "^9.1.0",
     "gh-pages": "^6.1.0",
     "husky": "^8.0.3",
-    "prettier": "^3.1.1"
+    "prettier": "^3.1.1",
+    "stylelint": "^16.0.2",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-config-recommended-scss": "^14.0.0",
+    "stylelint-scss": "^6.0.0"
   }
 }

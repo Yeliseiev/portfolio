@@ -1,0 +1,39 @@
+.logo {
+  position: relative;
+  z-index: 10;
+  display: block;
+  width: 42px;
+  height: 48px;
+
+  &__hex {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    fill: $green;
+    transition: $transition-duration;
+  }
+
+  & svg:first-of-type {
+    position: relative;
+    z-index: 6;
+    fill: $navy;
+    transition: $transition-duration;
+
+    &:hover {
+      transform: translate(-4px, -3px);
+
+      & + .logo__hex {
+        transform: translateY(-1px);
+      }
+    }
+  }
+
+  & polygon {
+    stroke: $green;
+  }
+
+  & text {
+    fill: $green;
+  }
+}

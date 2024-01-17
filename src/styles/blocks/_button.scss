@@ -1,0 +1,16 @@
+.button {
+  display: inline-block;
+  padding: 18px 50px;
+  border: 1px solid $green;
+  border-radius: $border-radius;
+  background-color: transparent;
+  color: $green;
+  cursor: pointer;
+  transition: $transition-duration;
+  @extend %button;
+
+  &:hover {
+    box-shadow: $box-shadow-button;
+    transform: translate(-5px, -5px);
+  }
+}
