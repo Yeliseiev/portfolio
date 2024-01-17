@@ -55,8 +55,10 @@ export const MenuMob = () => {
             ))}
           </ol>
           <a
-            href="cv/Kim_Yeliseiev_CV.pdf"
+            href="./cv/Kim_Yeliseiev_CV.pdf"
             className="button"
+            target="_blank"
+            rel="noopener noreferrer"
             onClick={() => setIsChecked(false)}
           >
             Resume

@@ -64,6 +64,8 @@ export const Menu: React.FC<Props> = ({ menuType }) => {
                   <a
                     href="./cv/Kim_Yeliseiev_CV.pdf"
                     className="button menu__button"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Resume
                   </a>
