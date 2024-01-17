@@ -55,7 +55,7 @@ export const MenuMob = () => {
             ))}
           </ol>
           <a
-            href="cv/Kim_Yelisieiev_CV.pdf"
+            href="cv/Kim_Yeliseiev_CV.pdf"
             className="button"
             onClick={() => setIsChecked(false)}
           >
