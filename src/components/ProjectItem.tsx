@@ -85,7 +85,7 @@ export const ProjectItem: React.FC<Props> = ({ project }) => {
         className="project__picture"
       >
         <img
-          src={`portfolio/img/${project.img}`}
+          src={`img/${project.img}`}
           alt={project.slug}
           className="project__picture-image"
         />

@@ -49,21 +49,21 @@ $duration: 3s;
       polygon {
         animation: pathTriangle $duration
           cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        stroke-dasharray: 145 (221 - 145) 145 (221 - 145);
+        stroke-dasharray: 145 calc(221 - 145) 145 calc(221 - 145);
         stroke-dashoffset: 0;
       }
       rect {
         animation: pathRect $duration
           cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        stroke-dasharray: (256 / 4 * 3) (256 / 4)
-          (256 / 4 * 3) (256 / 4);
+        stroke-dasharray: calc(256 / 4 * 3) calc(256 / 4)
+          calc(256 / 4 * 3) calc(256 / 4);
         stroke-dashoffset: 0;
       }
       circle {
         animation: pathCircle $duration
           cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
-        stroke-dasharray: (200 / 4 * 3) (200 / 4)
-          (200 / 4 * 3) (200 / 4);
+        stroke-dasharray: calc(200 / 4 * 3) calc(200 / 4)
+          calc(200 / 4 * 3) calc(200 / 4);
         stroke-dashoffset: 75;
       }
     }

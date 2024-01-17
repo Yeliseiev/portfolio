@@ -4,7 +4,7 @@ export function wait(delay: number) {
   });
 }
 
-const URL = 'portfolio/api/projects.json';
+const URL = 'https://yeliseiev.github.io/portfolio/api/projects.json';
 
 export const fetchProjects = async () => {
   const response = await fetch(URL);
